@@ -3,4 +3,15 @@ name = "nexum"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "nexum"
+
 [dependencies]
+actix-web = "4"
+
+[dev-dependencies]
+reqwest = "0.12"
